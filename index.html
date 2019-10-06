@@ -39,6 +39,7 @@
     <script type="text/javascript">
     var clicks = 0;
     function onClick() {
+        _gaq.push([‘_trackEvent’, ‘drinkButton’, 'Click’]);
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
