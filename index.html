@@ -41,9 +41,10 @@
     function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
+        _gaq.push([‘_trackEvent’, ‘drinkButton’, 'Click’]);
     };
     </script>
-    <button type="button" onClick="onClick()"="_gaq.push([‘_trackEvent’, ‘drinkButton’, 'Click’]);”>한 번 추가요</button>
+    <button type="button" onClick="onClick()">한 번 추가요</button>
         
     <p>오늘 <a id="clicks">0</a> 번 마셨다!</p>
 
