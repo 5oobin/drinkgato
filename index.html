@@ -43,9 +43,11 @@
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onClick="onClick()">한 번 추가요</button>
+    <button type="button" onClick="onClick()"="_gaq.push([‘_trackEvent’, ‘drinkButton’, 'Click’]);”>한 번 추가요</button>
+        
     <p>오늘 <a id="clicks">0</a> 번 마셨다!</p>
 
+      
     <button width="500" height="500" id ="reset" class="button button1"
     onclick="javascript:reset()">새로운 아침이 밝았습니다</button>
 
