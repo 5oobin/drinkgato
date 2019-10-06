@@ -38,13 +38,17 @@
     <h3><img src="https://scontent-sjc3-1.cdninstagram.com/vp/b1af8772a048f6917fcac682befdb5bb/5DD47C63/t51.2885-15/e35/c135.0.810.810a/s320x320/64394360_1250837968412976_2394681003757163580_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&ig_cache_key=MjA3NzIwMTMwNDcxNjc1NTA2Mg%3D%3D.2.c"></h3>
     <script type="text/javascript">
     var clicks = 0;
-    function onClick() {
+    function Click() {
         _gaq.push([‘_trackEvent’, ‘drinkButton’, 'Click’]);
+    };
+                   
+    function onClick() {
+        
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
     </script>
-    <button type="button" onClick="onClick()">한 번 추가요</button>
+    <button type="button" onClick="onClick()","Click()">한 번 추가요</button>
         
     <p>오늘 <a id="clicks">0</a> 번 마셨다!</p>
 
